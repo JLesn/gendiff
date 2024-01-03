@@ -1,4 +1,4 @@
-def plain(diff):
+def json(diff):
     res = []
     for node in diff:
         if node['type'] == 'removed':
