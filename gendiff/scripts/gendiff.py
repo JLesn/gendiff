@@ -1,16 +1,11 @@
 #!/usr/bin/env python
-import argparse
 from gendiff.gendiff import generate_diff
+from gendiff.argparse import args_for_script
 
 
 def main():
-    parser = argparse.ArgumentParser(
-        prog='gendiff', description='Generate differences')
-    parser.add_argument('first_file')
-    parser.add_argument('second_file')
-    parser.add_argument('-f', '--format', help='set format of output')
-    args = parser.parse_args()
-    print(generate_diff(args.first_file, args.second_file))
+    file1, file2, format = args_for_script()
+    print(generate_diff(file1, file2, format))
 
 
 if __name__ == '__main__':
