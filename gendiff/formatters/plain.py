@@ -1,6 +1,8 @@
 def format_value(value):
     if value is True:
         return "true"
+    elif type(value) is int:
+        return value
     elif value is False:
         return "false"
     elif value is None:
