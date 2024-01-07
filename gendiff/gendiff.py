@@ -14,4 +14,4 @@ def generate_diff(file1, file2, format='stylish'):
     f2 = get_file_data(file2)
     diff_list = get_diff(f1, f2)
     answ = get_format(diff_list, format)
-    return f"{{\n{answ}\n}}\n"
+    return f"{answ}"
