@@ -9,4 +9,4 @@ def get_format(diff_list, format="stylish"):
     elif format == "plain":
         return plain(diff_list)
     elif format == "json":
-        return "{\n" + json_formatter(diff_list) + "\n}"
+        return json_formatter(diff_list)
