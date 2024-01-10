@@ -1,14 +1,12 @@
 def format_value(value):
-    if value is True:
-        return "true"
+    if type(value) is bool:
+        return 'true' if value else 'false'
     elif type(value) is int:
         return value
-    elif value is False:
-        return "false"
     elif value is None:
-        return "null"
+        return 'null'
     elif type(value) is dict:
-        return "[complex value]"
+        return '[complex value]'
     else:
         return "'" + str(value) + "'"
 

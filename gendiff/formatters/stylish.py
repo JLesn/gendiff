@@ -3,10 +3,8 @@ def get_indent(depth):
 
 
 def format_value(value, depth):
-    if value is True:
-        return "true"
-    if value is False:
-        return "false"
+    if type(value) is bool:
+        return 'true' if value else 'false'
     if value is None:
         return "null"
     if type(value) is dict:
