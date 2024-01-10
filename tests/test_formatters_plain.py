@@ -1,4 +1,4 @@
-from gendiff.formatters.plain import plain
+import pytest
 from gendiff.gendiff import generate_diff
 
 

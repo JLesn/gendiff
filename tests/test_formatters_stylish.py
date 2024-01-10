@@ -1,4 +1,4 @@
-from gendiff.formatters.stylish import stylish
+import pytest
 from gendiff.gendiff import generate_diff
 
 

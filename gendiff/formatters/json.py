@@ -1,13 +1,4 @@
-def json(diff):
-    res = []
-    for node in diff:
-        if node['type'] == 'removed':
-            res.append(f"  - {node['node']}: {node['value']}")
-        if node['type'] == 'added':
-            res.append(f"  + {node['node']}: {node['value']}")
-        if node['type'] == 'unchanged':
-            res.append(f"    {node['node']}: {node['value']}")
-        if node['type'] == 'changed':
-            res.append(f"  - {node['node']}: {node['value_before']}")
-            res.append(f"  + {node['node']}: {node['value_after']}")
-    return '\n'.join(res).lower()
+import json
+
+def json_formatter(diff_list):
+    return json.dumps(diff_list, indent=4)
