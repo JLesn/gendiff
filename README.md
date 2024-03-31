@@ -9,6 +9,13 @@
 
 Программа, вычисляющая разницу между файлами с типами данных JSON или YAML
 
+Как установить программу:
+* Склонировать репозиторий
+* В корневой папке выполнить команды:
+1. make install
+2. make build
+3. make package-install
+
 Вывод справки:
 
 https://asciinema.org/a/J7uSlMnWkQ0B5phvhFbk0JQCB
